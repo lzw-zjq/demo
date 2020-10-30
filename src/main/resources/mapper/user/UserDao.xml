@@ -25,4 +25,18 @@
         );
     </insert>
 
+    <select id="getUserById" parameterType="java.lang.Integer" resultType="com.example.demo.user.entity.UserEntity">
+        select * from `user` where id = #{_parameter}
+    </select>
+
+    <update id="updateUserById" parameterType="com.example.demo.user.entity.UserEntity">
+        UPDATE `demo`.`user`
+        SET
+            username = #{username},
+            password = #{password}
+        WHERE
+	        (`id` = #{id});
+    </update>
+
+
 </mapper>

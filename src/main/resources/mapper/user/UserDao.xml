@@ -8,7 +8,7 @@
     </select>
 
     <delete id="delById" parameterType="java.lang.Integer">
-        DELETE  FROM  `user` where id = #{_parameter}
+        DELETE  FROM  `user` where id = #{id}
     </delete>
 
     <insert id="save" parameterType="com.example.demo.user.entity.UserEntity">
@@ -26,7 +26,7 @@
     </insert>
 
     <select id="getUserById" parameterType="java.lang.Integer" resultType="com.example.demo.user.entity.UserEntity">
-        select * from `user` where id = #{_parameter}
+        select * from `user` where id = #{id}
     </select>
 
     <update id="updateUserById" parameterType="com.example.demo.user.entity.UserEntity">

@@ -1,7 +1,6 @@
 package com.example.demo.user.service;
 
 import com.example.demo.user.entity.UserEntity;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;

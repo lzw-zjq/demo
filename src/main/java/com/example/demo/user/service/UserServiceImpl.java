@@ -2,7 +2,6 @@ package com.example.demo.user.service;
 
 import com.example.demo.user.dao.UserDao;
 import com.example.demo.user.entity.UserEntity;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

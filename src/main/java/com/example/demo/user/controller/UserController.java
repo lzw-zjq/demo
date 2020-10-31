@@ -36,7 +36,7 @@ public class UserController {
 
         System.out.println("用户注册 - " + userEntity.toString());
         userService.save(userEntity);
-        return  "success";
+        return  "注册成功";
     }
 
     @RequestMapping("/getUserById")
@@ -50,7 +50,7 @@ public class UserController {
     @ResponseBody
     public String updateUserById(@RequestBody UserEntity userEntity){
         userService.updateUserById(userEntity);
-        return "success" ;
+        return "修改成功" ;
     }
 
 }
